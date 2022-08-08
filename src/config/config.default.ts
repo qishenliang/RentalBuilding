@@ -1,5 +1,8 @@
 import { MidwayConfig } from '@midwayjs/core';
 import { User } from '../entity/user';
+import { Province } from '../entity/location/province';
+import { City } from '../entity/location/city';
+import { Area } from '../entity/location/area';
 
 export default {
   // use for cookie sign key, should change to your own and keep security
@@ -23,7 +26,7 @@ export default {
         logging: false,
 
         // 配置实体模型
-        entities: [User],
+        entities: [User, Province, City, Area],
       },
     },
   },
